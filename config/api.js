@@ -1,5 +1,4 @@
 const ApiRootUrl = 'http://www.sanook.fyi/api/';
-
 module.exports = {
   IndexUrl: ApiRootUrl + 'index/index', //首页数据接口
   CatalogList: ApiRootUrl + 'catalog/index',  //分类目录全部分类数据接口
