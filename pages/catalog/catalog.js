@@ -12,6 +12,7 @@ Page({
     scrollHeight: 0
   },
   onLoad: function (options) {
+    console.log('id >> ' , options)
     this.getCatalog();
   },
   getCatalog: function () {

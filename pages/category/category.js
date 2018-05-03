@@ -37,7 +37,7 @@ Page({
   },
   getCategoryInfo: function () {
     let that = this;
-    util.request(api.GoodsCategory, { id: this.data.id })
+    util.request(api.GoodsCategoryStore, { id: this.data.id })
       .then(function (res) {
 
         if (res.errno == 0) {
