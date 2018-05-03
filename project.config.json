@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
 	"appid": "touristappid",
-	"projectname": "WeShopTh",
+	"projectname": "Weshopth",
 	"condition": {
 		"search": {
 			"current": -1,
