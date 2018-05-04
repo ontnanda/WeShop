@@ -11,7 +11,7 @@
   <view class="a-section a-brand">
     <view class="h">
       <navigator url="../brand/brand">
-        <text class="txt">Recomend restaurant</text>
+        <text class="txt">Recomend Restaurant</text>
       </navigator>
     </view>
     <view class="b">
