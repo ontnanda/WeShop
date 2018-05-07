@@ -45,7 +45,9 @@ Page({
   getCheckoutInfo: function () {
     let that = this;
     util.request(api.CartCheckout, { addressId: that.data.addressId, couponId: that.data.couponId }).then(function (res) {
+      console.log(res);
       if (res.errno === 0) {
+        
         console.log(res.data);
         that.setData({
           checkedGoodsList: res.data.checkedGoodsList,
@@ -61,6 +63,7 @@ Page({
       }
       wx.hideLoading();
     });
+    
   },
   selectAddress() {
     wx.navigateTo({
@@ -93,10 +96,10 @@ Page({
 
   },
   submitOrder: function () {
-    if (this.data.addressId <= 0) {
-      util.showErrorToast('请选择收货地址');
-      return false;
-    }
+    // if (this.data.addressId <= 0) {
+    //   util.showErrorToast('请选择收货地址');
+    //   return false;
+    // }
     util.request(api.OrderSubmit, { addressId: this.data.addressId, couponId: this.data.couponId }, 'POST').then(res => {
       if (res.errno === 0) {
         const orderId = res.data.orderInfo.id;

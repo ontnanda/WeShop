@@ -26,10 +26,10 @@ function payOrder(orderId) {
             resolve(res);
           },
           'fail': function (res) {
-            reject(res);
+            resolve(res);
           },
           'complete': function (res) {
-            reject(res);
+            resolve(res);
           }
         });
       } else {
